@@ -1781,6 +1781,7 @@ function dryer_event_handler() {
             var tas_dryer = spawn('sh', ['./update.sh']);
             tas_dryer.stdout.on('data', function(data) {
                 dry_data_block.debug_message = 'Being Update';
+                console.log('Being Update');
                 console.log('stdout: ' + data);
             });
             tas_dryer.on('exit', function(code) {
