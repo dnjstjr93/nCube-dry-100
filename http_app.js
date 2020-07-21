@@ -39,7 +39,6 @@ global.my_mission_name = '';
 global.zero_parent_mission_name = '';
 global.zero_mission_name = '';
 global.my_sortie_name = 'disarm';
-// global.my_drone_type = 'pixhawk';
 global.my_secure = 'off';
 
 const first_interval = 3000;
@@ -51,29 +50,11 @@ const display_interval = 1000;
 const always_interval = 30000;
 const always_period_tick = parseInt((3 * 60 * 1000) / always_interval);
 
-const debug_pin = 12;
-const operation_pin = 18;
-const start_btn_pin = 13;
-const solenoid_pin = 14;
-const fan_pin = 15;
-const input_door_pin = 16;
-const output_door_pin = 17;
-const safe_door_pin = 18;
-const heater1_pin = 19;
-const heater2_pin = 20;
-const heater3_pin = 21;
-const stirrer_pin = 22;
-
 const TURN_ON = 0;
 const TURN_OFF = 1;
 const TURN_BACK = -1;
 
 var app = express();
-
-//app.use(bodyParser.urlencoded({ extended: true }));
-//app.use(bodyParser.json());
-//app.use(bodyParser.json({ type: 'application/*+json' }));
-//app.use(bodyParser.text({ type: 'application/*+xml' }));
 
 var dryer_event = 0x00;
 
