@@ -1306,7 +1306,7 @@ function res_start_btn(val) {
         else if(48 < start_press_count) {
             start_press_flag = 2;
             
-            dry_data_block.debug_message = 'LONG BTN CLICK';
+            // dry_data_block.debug_message = 'LONG BTN CLICK';
         }
     }
     else {
@@ -1750,9 +1750,9 @@ function dryer_event_handler() {
             dry_data_block.cum_weight = 0;
         }
         else if (dry_data_block.state == 'DEBUG'){
+            dry_data_block.debug_message = 'Being Update';
             var tas_dryer = spawn('sh', ['./update.sh']);
             tas_dryer.stdout.on('data', function(data) {
-                dry_data_block.debug_message = 'Being Update';
                 console.log('Being Update');
                 console.log('stdout: ' + data);
             });
