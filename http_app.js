@@ -94,16 +94,6 @@ const EVENT_END_ACTION = 0x08;
 const EVENT_DEBUG_BUTTON_RELEASE = 0x10;
 const EVENT_DEBUG_BUTTON_PRESS = 0x20;
 
-// var tas_dryer = spawn('python3', ['./exec.py']);
-// tas_dryer.stdout.on('data', function(data) {
-// console.log('stdout: ' + data);
-// });
-// tas_dryer.on('exit', function(code) {
-// console.log('exit: ' + code);
-// });
-// tas_dryer.on('error', function(code) {
-// console.log('error: ' + code);
-// });
 
 // ?????? ????????.
 var server = null;
