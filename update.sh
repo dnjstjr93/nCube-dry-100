@@ -2,6 +2,7 @@
 
 cd /home/pi/nCube-dry-100
 sudo killall python3
+sleep 2
 git stash
 git pull
 sleep 5
