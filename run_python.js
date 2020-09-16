@@ -1,7 +1,7 @@
 var spawn = require('child_process').spawn;
 
 function runBuzzer(){
-    var run_buzzer = spawn('python', ['exec_buzzer.py']);
+    var run_buzzer = spawn('python3', ['exec_buzzer.py']);
 
     run_buzzer.stdout.on('data', function(data) {
         console.log('stdout: ' + data);
@@ -24,7 +24,7 @@ function runBuzzer(){
 }
 
 function runPrint(){
-    var run_print = spawn('python', ['exec_print.py']);
+    var run_print = spawn('python3', ['exec_print.py']);
 
     run_print.stdout.on('data', function(data) {
         console.log('stdout: ' + data);
@@ -47,7 +47,7 @@ function runPrint(){
 }
 
 function runRes(){
-    var run_res = spawn('python', ['exec_res.py']);
+    var run_res = spawn('python3', ['exec_res.py']);
 
     run_res.stdout.on('data', function(data) {
         console.log('stdout: ' + data);
@@ -70,7 +70,7 @@ function runRes(){
 }
 
 function runRes2(){
-    var run_res2 = spawn('python', ['exec_res2.py']);
+    var run_res2 = spawn('python3', ['exec_res2.py']);
 
     run_res2.stdout.on('data', function(data) {
         console.log('stdout: ' + data);
